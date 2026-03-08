@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laser Medical Services Inc | Surgical Laser Rentals</title>
+    <meta
+      name="description"
+      content="Laser Medical Services Inc rents out surgical lasers with dependable service and support."
+    />
+    <style>
+      :root {
+        --bg: #edf3f7;
+        --surface: #ffffff;
+        --surface-soft: #f7fafc;
+        --text: #102a43;
+        --muted: #486581;
+        --accent: #1b6ca8;
+        --accent-dark: #0f4d80;
+        --line: #d9e2ec;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Frutiger", "Myriad Pro", "Trebuchet MS", sans-serif;
+        color: var(--text);
+        background:
+          linear-gradient(145deg, rgba(27, 108, 168, 0.14), transparent 42%),
+          radial-gradient(circle at 85% 0%, rgba(16, 42, 67, 0.08), transparent 35%),
+          var(--bg);
+      }
+
+      .page {
+        width: min(980px, 100%);
+        margin: 0 auto;
+        padding: 1.5rem;
+      }
+
+      .site {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 18px 38px rgba(16, 42, 67, 0.11);
+      }
+
+      .hero {
+        padding: 2.2rem 2.2rem 2rem;
+        border-bottom: 1px solid var(--line);
+        background: linear-gradient(90deg, #f7fbfe, #ffffff 60%);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(1.8rem, 3.1vw, 2.5rem);
+        line-height: 1.2;
+        letter-spacing: 0.01em;
+      }
+
+      .subtitle {
+        margin: 0.7rem 0 1.1rem;
+        font-size: 1.06rem;
+        color: var(--muted);
+        font-weight: 600;
+      }
+
+      .hero p {
+        margin: 0;
+        line-height: 1.7;
+        max-width: 64ch;
+      }
+
+      .content {
+        padding: 1.6rem 2.2rem 2.2rem;
+        display: grid;
+        grid-template-columns: 1.2fr 0.9fr;
+        gap: 1.25rem;
+      }
+
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 1.2rem 1.2rem 1.3rem;
+        background: var(--surface-soft);
+      }
+
+      .panel h2 {
+        margin: 0 0 0.75rem;
+        font-size: 1.1rem;
+      }
+
+      .panel p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .section-label {
+        color: var(--muted);
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
+        margin: 0 0 0.65rem;
+        font-weight: 700;
+      }
+
+      .contact a {
+        display: block;
+        color: var(--accent-dark);
+        text-decoration: none;
+        font-weight: 700;
+        border: 1px solid #bfd5e6;
+        border-radius: 10px;
+        padding: 0.75rem 0.85rem;
+        margin-bottom: 0.7rem;
+        background: #f0f7fc;
+      }
+
+      .contact a:last-child {
+        margin-bottom: 0;
+      }
+
+      .contact a:hover,
+      .contact a:focus-visible {
+        border-color: var(--accent);
+        background: #e3f0f9;
+      }
+
+      .cta {
+        margin-top: 1rem;
+        display: inline-block;
+        background: var(--accent);
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 700;
+        border: 1px solid var(--accent-dark);
+        border-radius: 10px;
+        padding: 0.68rem 1rem;
+      }
+
+      .cta:hover,
+      .cta:focus-visible {
+        background: var(--accent-dark);
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          padding: 1rem;
+        }
+
+        .hero {
+          padding: 1.5rem 1.3rem;
+        }
+
+        .content {
+          grid-template-columns: 1fr;
+          padding: 1.2rem 1.3rem 1.4rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <main class="site">
+        <section class="hero">
+          <h1>Laser Medical Services Inc</h1>
+          <p class="subtitle">Surgical Laser Rentals</p>
+          <p>
+            Dependable surgical laser rental solutions, delivered with
+            responsive service and professional support for your facility.
+          </p>
+        </section>
+
+        <section class="content">
+          <article class="panel">
+            <p class="section-label">About</p>
+            <h2>Trusted, Straightforward Rental Support</h2>
+            <p>
+              We provide surgical laser rental options with a focus on
+              reliability, clear communication, and timely service. Reach out to
+              discuss your needs and availability.
+            </p>
+            <a class="cta" href="tel:+16268399000">Speak With Us Today</a>
+          </article>
+
+          <aside class="panel contact" aria-label="Contact information">
+            <p class="section-label">Contact</p>
+            <a href="tel:+16268399000">Call 626 839 9000</a>
+            <a href="mailto:lasermedinc@gmail.com">Email lasermedinc@gmail.com</a>
+          </aside>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
