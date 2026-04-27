@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Laser Rental Los Angeles | Surgical & Medical Laser Rental</title>
     <meta
       name="description"
@@ -105,14 +111,14 @@
     </script>
     <style>
       :root {
-        --bg: #edf3f7;
+        --bg: #f3f8ff;
         --surface: #ffffff;
-        --surface-soft: #f7fafc;
-        --text: #102a43;
-        --muted: #486581;
-        --accent: #1b6ca8;
-        --accent-dark: #0f4d80;
-        --line: #d9e2ec;
+        --surface-soft: #f2f7fd;
+        --text: #0b2340;
+        --muted: #315474;
+        --accent: #0b63b6;
+        --accent-dark: #094b89;
+        --line: #c7d9ec;
       }
 
       * {
@@ -121,11 +127,11 @@
 
       body {
         margin: 0;
-        font-family: "Frutiger", "Myriad Pro", "Trebuchet MS", sans-serif;
+        font-family: "Source Sans 3", "Trebuchet MS", sans-serif;
         color: var(--text);
         background:
-          linear-gradient(145deg, rgba(27, 108, 168, 0.14), transparent 42%),
-          radial-gradient(circle at 85% 0%, rgba(16, 42, 67, 0.08), transparent 35%),
+          linear-gradient(145deg, rgba(11, 99, 182, 0.16), transparent 42%),
+          radial-gradient(circle at 85% 0%, rgba(9, 75, 137, 0.1), transparent 36%),
           var(--bg);
       }
 
@@ -146,27 +152,73 @@
       .hero {
         padding: 2.2rem 2.2rem 2rem;
         border-bottom: 1px solid var(--line);
-        background: linear-gradient(90deg, #f7fbfe, #ffffff 60%);
+        background: linear-gradient(90deg, var(--surface-soft), var(--surface) 64%);
+      }
+
+      .hero-kicker {
+        margin: 0 0 0.5rem;
+        color: var(--muted);
+        font-weight: 600;
+        letter-spacing: 0.03em;
       }
 
       h1 {
         margin: 0;
+        font-family: "IBM Plex Sans", "Source Sans 3", sans-serif;
         font-size: clamp(1.8rem, 3.1vw, 2.5rem);
         line-height: 1.2;
         letter-spacing: 0.01em;
       }
 
       .subtitle {
-        margin: 0.7rem 0 1.1rem;
-        font-size: 1.06rem;
+        margin: 0.7rem 0 0.9rem;
+        font-size: 1.03rem;
         color: var(--muted);
-        font-weight: 600;
+        font-weight: 500;
       }
 
       .hero p {
         margin: 0;
         line-height: 1.7;
         max-width: 64ch;
+      }
+
+      .hero-actions {
+        margin-top: 1.2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+      }
+
+      .hero-btn {
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 0.65rem 1rem;
+        font-weight: 700;
+        border: 1px solid var(--accent-dark);
+      }
+
+      .hero-btn.primary {
+        background: var(--accent);
+        color: #ffffff;
+      }
+
+      .hero-btn.primary:hover,
+      .hero-btn.primary:focus-visible {
+        background: var(--accent-dark);
+      }
+
+      .hero-btn.secondary {
+        background: var(--surface-soft);
+        color: var(--accent-dark);
+        border-color: var(--line);
+      }
+
+      .hero-btn.secondary:hover,
+      .hero-btn.secondary:focus-visible {
+        background: #e9f2fb;
+        border-color: var(--accent);
       }
 
       .content {
@@ -185,6 +237,7 @@
 
       .panel h2 {
         margin: 0 0 0.75rem;
+        font-family: "IBM Plex Sans", "Source Sans 3", sans-serif;
         font-size: 1.1rem;
       }
 
@@ -199,16 +252,119 @@
         font-size: 0.96rem;
       }
 
+      .proof {
+        margin-top: 1rem;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--surface-soft);
+        padding: 0.9rem;
+      }
+
+      .proof h3 {
+        margin: 0 0 0.55rem;
+        font-family: "IBM Plex Sans", "Source Sans 3", sans-serif;
+        font-size: 0.95rem;
+      }
+
+      .proof-list {
+        margin: 0;
+        padding-left: 1.1rem;
+        color: var(--text);
+      }
+
+      .proof-list li {
+        margin-bottom: 0.38rem;
+        line-height: 1.45;
+      }
+
+      .proof-list li:last-child {
+        margin-bottom: 0;
+      }
+
       .faq {
         margin: 0 2.2rem 2.2rem;
         border: 1px solid var(--line);
         border-radius: 14px;
-        background: #ffffff;
+        background: var(--surface);
         padding: 1.2rem;
+      }
+
+      .services {
+        margin: 1.2rem 2.2rem 2.2rem;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: var(--surface);
+        padding: 1.2rem;
+      }
+
+      .services h2 {
+        margin: 0 0 0.85rem;
+        font-family: "IBM Plex Sans", "Source Sans 3", sans-serif;
+      }
+
+      .service-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.9rem;
+      }
+
+      .service-card {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--surface-soft);
+        padding: 0.9rem;
+      }
+
+      .service-card h3 {
+        margin: 0 0 0.5rem;
+        font-family: "IBM Plex Sans", "Source Sans 3", sans-serif;
+        font-size: 1rem;
+      }
+
+      .service-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .process {
+        margin: 0 2.2rem 2.2rem;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: var(--surface-soft);
+        padding: 1.2rem;
+      }
+
+      .process h2 {
+        margin: 0 0 0.85rem;
+        font-family: "IBM Plex Sans", "Source Sans 3", sans-serif;
+      }
+
+      .process-steps {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        align-items: center;
+      }
+
+      .step {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--surface);
+        color: var(--text);
+        padding: 0.45rem 0.85rem;
+        font-weight: 600;
+        line-height: 1.3;
+      }
+
+      .arrow {
+        color: var(--muted);
+        font-weight: 700;
       }
 
       .faq h2 {
         margin: 0 0 0.9rem;
+        font-family: "IBM Plex Sans", "Source Sans 3", sans-serif;
       }
 
       .faq-item {
@@ -225,6 +381,7 @@
 
       .faq-item h3 {
         margin: 0 0 0.45rem;
+        font-family: "IBM Plex Sans", "Source Sans 3", sans-serif;
         font-size: 0.98rem;
       }
 
@@ -246,11 +403,11 @@
         color: var(--accent-dark);
         text-decoration: none;
         font-weight: 700;
-        border: 1px solid #bfd5e6;
+        border: 1px solid var(--line);
         border-radius: 10px;
         padding: 0.75rem 0.85rem;
         margin-bottom: 0.7rem;
-        background: #f0f7fc;
+        background: var(--surface-soft);
       }
 
       .contact a:last-child {
@@ -260,7 +417,7 @@
       .contact a:hover,
       .contact a:focus-visible {
         border-color: var(--accent);
-        background: #e3f0f9;
+        background: #e9f2fb;
       }
 
       .cta {
@@ -280,6 +437,50 @@
         background: var(--accent-dark);
       }
 
+      .site-footer {
+        margin: 0 2.2rem 2rem;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: var(--surface-soft);
+        padding: 1rem 1.2rem;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .footer-block h3 {
+        margin: 0 0 0.35rem;
+        font-family: "IBM Plex Sans", "Source Sans 3", sans-serif;
+        font-size: 0.95rem;
+      }
+
+      .footer-block p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .footer-block a {
+        color: var(--accent-dark);
+        text-decoration: none;
+      }
+
+      .footer-block a:hover,
+      .footer-block a:focus-visible {
+        text-decoration: underline;
+      }
+
+      .copyright {
+        margin-top: 0.9rem;
+        padding-top: 0.9rem;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
       @media (max-width: 640px) {
         .page {
           padding: 1rem;
@@ -297,6 +498,30 @@
         .faq {
           margin: 0 1.3rem 1.4rem;
         }
+
+        .site-footer {
+          margin: 0 1.3rem 1.4rem;
+        }
+
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .services {
+          margin: 1rem 1.3rem 1.4rem;
+        }
+
+        .service-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .process {
+          margin: 0 1.3rem 1.4rem;
+        }
+
+        .arrow {
+          display: none;
+        }
       }
     </style>
   </head>
@@ -304,13 +529,63 @@
     <div class="page">
       <main class="site" itemscope itemtype="https://schema.org/Organization">
         <section class="hero">
-          <h1>Laser Medical Services Inc</h1>
-          <p class="subtitle">Surgical and Medical Laser Rental in Los Angeles</p>
+          <p class="hero-kicker">Laser Medical Services Inc</p>
+          <h1>Surgical and Medical Laser Rental in Los Angeles</h1>
+          <p class="subtitle">Reliable equipment, setup support, and responsive service.</p>
           <p>
             Dependable laser rental solutions in the Los Angeles area,
             delivered with responsive service and professional support for your
             facility.
           </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="hero-btn primary" href="tel:+16263187466">Call for Quote</a>
+            <a class="hero-btn secondary" href="mailto:lasermedinc@gmail.com">Email Us</a>
+          </div>
+        </section>
+
+        <section class="services" aria-label="Services">
+          <p class="section-label">Services</p>
+          <h2>Laser Rental Equipment</h2>
+          <div class="service-grid">
+            <article class="service-card">
+              <h3>Holmium Laser</h3>
+              <p>
+                For urology lithotripsy cases. Available as per-case laser
+                rental with setup, delivery, pickup, and laser technician
+                support.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <h3>KTP Laser (AMS Aura XP)</h3>
+              <p>
+                For ENT cases. Offered as per-case laser rental, including
+                delivery, setup, pickup, and technician support.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <h3>Conmed ABC (Argon Beam Coagulator)</h3>
+              <p>
+                Available on monthly rental terms. Supplies are not included.
+                Call 626-318-7466 for availability and pricing.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="process" aria-label="Process">
+          <p class="section-label">Process</p>
+          <h2>How It Works</h2>
+          <div class="process-steps">
+            <span class="step">Request Quote</span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+            <span class="step">Confirm Availability</span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+            <span class="step">Deliver and Setup</span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+            <span class="step">Pickup</span>
+          </div>
         </section>
 
         <section class="content">
@@ -322,6 +597,15 @@
               with a focus on reliability, clear communication, and timely
               service. Reach out to discuss your needs and availability.
             </p>
+            <section class="proof" aria-label="Why choose us">
+              <h3>Why Choose Us</h3>
+              <ul class="proof-list">
+                <li>Responsive turnaround for urgent scheduling needs.</li>
+                <li>Trained laser technician support included with per-case rentals.</li>
+                <li>Delivery and pickup coverage across the Los Angeles area.</li>
+                <li>Reliable equipment and professional setup for each case.</li>
+              </ul>
+            </section>
             <p class="areas">
               Service areas: Alhambra, Monterey Park, West Covina, Baldwin
               Park, Arcadia, Carson, and Santa Anita.
@@ -372,7 +656,37 @@
             <p>Call 626-318-7466 for a price quote.</p>
           </article>
         </section>
+
+        <footer class="site-footer" aria-label="Site footer">
+          <div class="footer-grid">
+            <section class="footer-block">
+              <h3>Company</h3>
+              <p>Laser Medical Services Inc</p>
+            </section>
+
+            <section class="footer-block">
+              <h3>Contact</h3>
+              <p><a href="tel:+16268399000">626 839 9000</a></p>
+              <p><a href="tel:+16263187466">626 318 7466</a></p>
+              <p><a href="mailto:lasermedinc@gmail.com">lasermedinc@gmail.com</a></p>
+            </section>
+
+            <section class="footer-block">
+              <h3>Service Area</h3>
+              <p>
+                Los Angeles area, including Alhambra, Monterey Park, West
+                Covina, Baldwin Park, Arcadia, Carson, and Santa Anita.
+              </p>
+            </section>
+          </div>
+          <p class="copyright">
+            &copy; <span id="year"></span> Laser Medical Services Inc. All rights reserved.
+          </p>
+        </footer>
       </main>
     </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
