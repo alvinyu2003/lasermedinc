@@ -63,6 +63,46 @@
         ]
       }
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What types of laser equipment are available for rental?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Holmium laser for urology lithotripsy cases, KTP laser (AMS Aura XP) for ENT cases, and Conmed ABC argon beam coagulator on monthly rental terms."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What rental terms are available?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Laser rental is available on a per-case basis. Conmed ABC (argon beam coagulator) is available as a monthly rental, and supplies are not included."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is included with laser rental?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Per-case laser rental includes the laser, laser technician support, setup, delivery, and pickup."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I request pricing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Call 626-318-7466 for a price quote."
+            }
+          }
+        ]
+      }
+    </script>
     <style>
       :root {
         --bg: #edf3f7;
@@ -159,6 +199,39 @@
         font-size: 0.96rem;
       }
 
+      .faq {
+        margin: 0 2.2rem 2.2rem;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: #ffffff;
+        padding: 1.2rem;
+      }
+
+      .faq h2 {
+        margin: 0 0 0.9rem;
+      }
+
+      .faq-item {
+        border-top: 1px solid var(--line);
+        padding-top: 0.9rem;
+        margin-top: 0.9rem;
+      }
+
+      .faq-item:first-of-type {
+        border-top: 0;
+        padding-top: 0;
+        margin-top: 0;
+      }
+
+      .faq-item h3 {
+        margin: 0 0 0.45rem;
+        font-size: 0.98rem;
+      }
+
+      .faq-item p {
+        margin: 0;
+      }
+
       .section-label {
         color: var(--muted);
         font-size: 0.78rem;
@@ -220,6 +293,10 @@
           grid-template-columns: 1fr;
           padding: 1.2rem 1.3rem 1.4rem;
         }
+
+        .faq {
+          margin: 0 1.3rem 1.4rem;
+        }
       }
     </style>
   </head>
@@ -255,8 +332,45 @@
           <aside class="panel contact" aria-label="Contact information">
             <p class="section-label">Contact</p>
             <a href="tel:+16268399000" aria-label="Call Laser Medical Services Inc at 626 839 9000">Call 626 839 9000</a>
+            <a href="tel:+16263187466" aria-label="Call Laser Medical Services Inc for pricing at 626 318 7466">Call 626 318 7466 for Price Quote</a>
             <a href="mailto:lasermedinc@gmail.com" aria-label="Email Laser Medical Services Inc at lasermedinc@gmail.com">Email lasermedinc@gmail.com</a>
           </aside>
+        </section>
+
+        <section class="faq" aria-label="Frequently asked questions">
+          <p class="section-label">FAQ</p>
+          <h2>Common Rental Questions</h2>
+
+          <article class="faq-item">
+            <h3>What types of laser equipment are available for rental?</h3>
+            <p>
+              Holmium laser for urology lithotripsy cases, KTP laser (AMS Aura
+              XP) for ENT cases, and Conmed ABC (argon beam coagulator) on
+              monthly rental terms.
+            </p>
+          </article>
+
+          <article class="faq-item">
+            <h3>What rental terms are available?</h3>
+            <p>
+              Laser rental is available on a per-case basis. Conmed ABC (argon
+              beam coagulator) is available as a monthly rental, and supplies
+              are not included.
+            </p>
+          </article>
+
+          <article class="faq-item">
+            <h3>What is included with laser rental?</h3>
+            <p>
+              Per-case laser rental includes the laser, laser technician
+              support, setup, delivery, and pickup.
+            </p>
+          </article>
+
+          <article class="faq-item">
+            <h3>How can I request pricing?</h3>
+            <p>Call 626-318-7466 for a price quote.</p>
+          </article>
         </section>
       </main>
     </div>
