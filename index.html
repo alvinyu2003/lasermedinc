@@ -111,48 +111,51 @@
     </script>
     <style>
       :root {
-        --bg: #f3f8ff;
+        --bg: #f2f4f7;
         --surface: #ffffff;
-        --surface-soft: #f2f7fd;
-        --text: #0b2340;
-        --muted: #315474;
-        --accent: #0b63b6;
-        --accent-dark: #094b89;
-        --line: #c7d9ec;
+        --surface-soft: #ffffff;
+        --surface-tint: #f2f8ff;
+        --text: #102a43;
+        --muted: #365778;
+        --accent: #005eb8;
+        --accent-dark: #00498f;
+        --line: #c4d6ea;
       }
 
       * {
         box-sizing: border-box;
       }
 
+      html {
+        background: #f2f4f7;
+      }
+
       body {
         margin: 0;
         font-family: "Source Sans 3", "Trebuchet MS", sans-serif;
         color: var(--text);
-        background:
-          linear-gradient(145deg, rgba(11, 99, 182, 0.16), transparent 42%),
-          radial-gradient(circle at 85% 0%, rgba(9, 75, 137, 0.1), transparent 36%),
-          var(--bg);
+        background: var(--bg);
       }
 
       .page {
         width: min(980px, 100%);
         margin: 0 auto;
         padding: 1.5rem;
+        background: #f2f4f7;
       }
 
       .site {
         background: var(--surface);
         border: 1px solid var(--line);
-        border-radius: 20px;
+        border-radius: 0;
         overflow: hidden;
-        box-shadow: 0 18px 38px rgba(16, 42, 67, 0.11);
+        box-shadow: none;
       }
 
       .hero {
         padding: 2.2rem 2.2rem 2rem;
         border-bottom: 1px solid var(--line);
-        background: linear-gradient(90deg, var(--surface-soft), var(--surface) 64%);
+        background: var(--surface);
       }
 
       .hero-kicker {
@@ -193,7 +196,7 @@
       .hero-btn {
         display: inline-block;
         text-decoration: none;
-        border-radius: 10px;
+        border-radius: 0;
         padding: 0.65rem 1rem;
         font-weight: 700;
         border: 1px solid var(--accent-dark);
@@ -217,7 +220,7 @@
 
       .hero-btn.secondary:hover,
       .hero-btn.secondary:focus-visible {
-        background: #e9f2fb;
+        background: var(--surface-tint);
         border-color: var(--accent);
       }
 
@@ -230,9 +233,9 @@
 
       .panel {
         border: 1px solid var(--line);
-        border-radius: 14px;
+        border-radius: 0;
         padding: 1.2rem 1.2rem 1.3rem;
-        background: var(--surface-soft);
+        background: var(--surface);
       }
 
       .panel h2 {
@@ -255,8 +258,8 @@
       .proof {
         margin-top: 1rem;
         border: 1px solid var(--line);
-        border-radius: 12px;
-        background: var(--surface-soft);
+        border-radius: 0;
+        background: var(--surface-tint);
         padding: 0.9rem;
       }
 
@@ -284,7 +287,7 @@
       .faq {
         margin: 0 2.2rem 2.2rem;
         border: 1px solid var(--line);
-        border-radius: 14px;
+        border-radius: 0;
         background: var(--surface);
         padding: 1.2rem;
       }
@@ -292,7 +295,7 @@
       .services {
         margin: 1.2rem 2.2rem 2.2rem;
         border: 1px solid var(--line);
-        border-radius: 14px;
+        border-radius: 0;
         background: var(--surface);
         padding: 1.2rem;
       }
@@ -310,8 +313,8 @@
 
       .service-card {
         border: 1px solid var(--line);
-        border-radius: 12px;
-        background: var(--surface-soft);
+        border-radius: 0;
+        background: var(--surface);
         padding: 0.9rem;
       }
 
@@ -330,8 +333,8 @@
       .process {
         margin: 0 2.2rem 2.2rem;
         border: 1px solid var(--line);
-        border-radius: 14px;
-        background: var(--surface-soft);
+        border-radius: 0;
+        background: var(--surface);
         padding: 1.2rem;
       }
 
@@ -349,7 +352,7 @@
 
       .step {
         border: 1px solid var(--line);
-        border-radius: 999px;
+        border-radius: 0;
         background: var(--surface);
         color: var(--text);
         padding: 0.45rem 0.85rem;
@@ -404,10 +407,10 @@
         text-decoration: none;
         font-weight: 700;
         border: 1px solid var(--line);
-        border-radius: 10px;
+        border-radius: 0;
         padding: 0.75rem 0.85rem;
         margin-bottom: 0.7rem;
-        background: var(--surface-soft);
+        background: var(--surface);
       }
 
       .contact a:last-child {
@@ -417,7 +420,7 @@
       .contact a:hover,
       .contact a:focus-visible {
         border-color: var(--accent);
-        background: #e9f2fb;
+        background: var(--surface-tint);
       }
 
       .cta {
@@ -428,7 +431,7 @@
         text-decoration: none;
         font-weight: 700;
         border: 1px solid var(--accent-dark);
-        border-radius: 10px;
+        border-radius: 0;
         padding: 0.68rem 1rem;
       }
 
@@ -440,8 +443,8 @@
       .site-footer {
         margin: 0 2.2rem 2rem;
         border: 1px solid var(--line);
-        border-radius: 14px;
-        background: var(--surface-soft);
+        border-radius: 0;
+        background: var(--surface);
         padding: 1rem 1.2rem;
       }
 
